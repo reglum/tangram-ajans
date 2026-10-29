@@ -256,31 +256,33 @@
             </div>
           </div>
           
-          <!-- High-End Luxury Tangram Emblem Showcase -->
-          <div class="relative w-64 h-64 shrink-0 rounded-2xl bg-[#181818] border border-[#272727] p-6 flex flex-col items-center justify-center shadow-inner group">
+          <!-- High-End Interactive Tangram Showcase -->
+          <div class="relative w-64 h-64 shrink-0 rounded-2xl bg-[#181818] border border-[#272727] p-5 flex flex-col items-center justify-center shadow-inner group">
             <div class="absolute inset-0 bg-radial from-[#D4FF3F]/10 via-transparent to-transparent pointer-events-none rounded-2xl"></div>
             
-            <!-- Sleek Vector Geometric Tangram Architecture -->
-            <svg viewBox="0 0 160 160" class="w-36 h-36 drop-shadow-[0_0_20px_rgba(212,255,63,0.35)] transition-transform duration-500 group-hover:scale-105" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Geometric Tangram Assembled Pieces with Neon Accents -->
-              <!-- Large Triangle 1 -->
-              <polygon points="10,10 150,10 80,80" fill="#181818" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round"/>
-              <!-- Large Triangle 2 -->
-              <polygon points="10,10 80,80 10,150" fill="#111111" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
-              <!-- Medium Triangle -->
-              <polygon points="150,10 150,150 80,150" fill="#1F1F1F" stroke="#D4FF3F" stroke-width="2" stroke-linejoin="round"/>
-              <!-- Square -->
-              <polygon points="80,80 115,115 80,150 45,115" fill="#D4FF3F" fill-opacity="0.15" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round"/>
-              <!-- Small Triangle 1 -->
-              <polygon points="45,115 80,150 10,150" fill="#111111" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
-              <!-- Parallelogram -->
-              <polygon points="80,80 115,115 150,80 115,45" fill="#181818" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
+            <!-- Precise Canonical Tangram in Square with Interactive Scroll/Hover Lighting -->
+            <svg id="tangram-interactive-svg" viewBox="0 0 200 200" class="w-44 h-44 drop-shadow-[0_0_20px_rgba(212,255,63,0.3)] transition-transform duration-500 group-hover:scale-105" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Outer Crisp White Boundary Frame -->
+              <rect x="1.5" y="1.5" width="197" height="197" fill="none" stroke="#FFFFFF" stroke-width="3" />
               
-              <!-- Center Glow Pin -->
-              <circle cx="80" cy="80" r="4" fill="#D4FF3F" class="animate-pulse"/>
+              <!-- Canonical 7 Tangram Pieces with Neon Yellow Lines -->
+              <!-- Piece 1: Large Triangle 1 (Top) -->
+              <polygon id="tangram-piece-1" points="0,0 200,0 100,100" fill="#181818" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <!-- Piece 2: Small Triangle 1 (Top Right) -->
+              <polygon id="tangram-piece-2" points="150,50 200,0 200,100" fill="#181818" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <!-- Piece 3: Large Triangle 2 (Left) -->
+              <polygon id="tangram-piece-3" points="0,0 0,200 100,100" fill="#181818" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <!-- Piece 4: Square / Rhombus 45° (Center Right) -->
+              <polygon id="tangram-piece-4" points="100,100 150,50 200,100 150,150" fill="#181818" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <!-- Piece 5: Small Triangle 2 (Center) -->
+              <polygon id="tangram-piece-5" points="50,150 100,100 150,150" fill="#181818" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <!-- Piece 6: Medium Triangle (Bottom Right) -->
+              <polygon id="tangram-piece-6" points="100,200 200,200 200,100" fill="#181818" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <!-- Piece 7: Parallelogram (Bottom) -->
+              <polygon id="tangram-piece-7" points="0,200 50,150 150,150 100,200" fill="#181818" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
             </svg>
 
-            <span class="font-mono text-[10px] text-[#9B9B9B] tracking-widest mt-4">TANGRAM 360° FRAMEWORK</span>
+            <span class="font-mono text-[10px] text-[#9B9B9B] tracking-widest mt-3">TANGRAM 360° FRAMEWORK</span>
           </div>
 
         </div>
@@ -298,10 +300,10 @@
               <span class="w-2 h-2 rounded-full bg-[#D4FF3F]"></span>
               <p class="text-xs font-mono uppercase tracking-widest text-[#D4FF3F]">GÜVENİLİR REFERANSLAR</p>
             </div>
-            <h2 class="text-2xl sm:text-3xl font-bold text-white">Türkiye'nin lider sanayi ve tüketici markaları</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">Türkiye'nin ve dünyanın öncü markaları</h2>
           </div>
           <p class="text-xs font-mono text-[#9B9B9B] max-w-sm text-left md:text-right">
-            Resmi kurumsal sitelerinden ve tescilli varlıklarından derlenen gerçek holding ve marka logoları.
+            Stratejik büyüme ve 360 derece marka orkestrasyonu yürüttüğümüz küresel pazar liderleri.
           </p>
         </div>
 
@@ -1203,7 +1205,7 @@
       } else {
         title.textContent = 'Gizlilik Politikası ve Ticari Sırların Korunması';
         body.innerHTML = `
-          <p>Tangram, Türkiye'nin lider sanayi ve holding yapıları ile yürüttüğü çalışmalarda mutlak ticari sır ve rekabet koruma protokolünü taahhüt eder.</p>
+          <p>Tangram, Türkiye'nin ve dünyanın öncü markaları ile yürüttüğü çalışmalarda mutlak ticari sır ve rekabet koruma protokolünü taahhüt eder.</p>
           <p>Tarafımıza sunulan yıllık bütçe hedefleri, lansman stratejileri, ürün tasarımları ve pazar analizleri çift taraflı NDA hükümleri altında şifrelenmiş altyapıda saklanır.</p>
           <p>Her türlü bilgi talebi için direktörlüğümüzle doğrudan temas kurabilirsiniz.</p>
         `;
@@ -1223,6 +1225,79 @@
     function dismissCookies() {
       document.getElementById('cookie-banner').style.display = 'none';
     }
+
+    // Interactive Tangram Scroll & Hover Illumination
+    (function initTangramAnimation() {
+      const pieceIds = [
+        'tangram-piece-1',
+        'tangram-piece-2',
+        'tangram-piece-3',
+        'tangram-piece-4',
+        'tangram-piece-5',
+        'tangram-piece-6',
+        'tangram-piece-7'
+      ];
+      
+      const pieces = pieceIds.map(id => document.getElementById(id)).filter(Boolean);
+      if (pieces.length === 0) return;
+
+      let activeIndex = -1;
+      let lastScrollY = window.scrollY;
+      let scrollAccumulator = 0;
+      let fadeTimeout = null;
+
+      function highlightPiece(index) {
+        pieces.forEach((piece, i) => {
+          if (i === index) {
+            piece.setAttribute('fill', '#D4FF3F');
+            piece.setAttribute('fill-opacity', '0.9');
+            piece.style.filter = 'drop-shadow(0 0 16px rgba(212,255,63,0.85))';
+          } else {
+            piece.setAttribute('fill', '#181818');
+            piece.setAttribute('fill-opacity', '1');
+            piece.style.filter = 'none';
+          }
+        });
+
+        clearTimeout(fadeTimeout);
+        fadeTimeout = setTimeout(() => {
+          pieces.forEach(piece => {
+            piece.setAttribute('fill', '#181818');
+            piece.setAttribute('fill-opacity', '1');
+            piece.style.filter = 'none';
+          });
+        }, 1400);
+      }
+
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        const delta = Math.abs(currentScrollY - lastScrollY);
+        lastScrollY = currentScrollY;
+
+        scrollAccumulator += delta;
+        // Shift to next piece every 55px of scroll
+        if (scrollAccumulator > 55) {
+          activeIndex = (activeIndex + 1) % pieces.length;
+          highlightPiece(activeIndex);
+          scrollAccumulator = 0;
+        }
+      }, { passive: true });
+
+      // Cursor hover lighting
+      pieces.forEach((piece, idx) => {
+        piece.addEventListener('mouseenter', () => highlightPiece(idx));
+        piece.addEventListener('mouseleave', () => {
+          clearTimeout(fadeTimeout);
+          fadeTimeout = setTimeout(() => {
+            pieces.forEach(p => {
+              p.setAttribute('fill', '#181818');
+              p.setAttribute('fill-opacity', '1');
+              p.style.filter = 'none';
+            });
+          }, 350);
+        });
+      });
+    })();
   </script>
 </body>
 </html>
