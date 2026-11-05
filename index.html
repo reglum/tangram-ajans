@@ -262,24 +262,34 @@
             
             <!-- Precise Canonical Tangram in Square with Interactive Scroll/Hover Lighting -->
             <svg id="tangram-interactive-svg" viewBox="-4 -4 208 208" class="w-48 h-48 drop-shadow-[0_0_25px_rgba(212,255,63,0.35)] transition-transform duration-500 group-hover:scale-105" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Canonical 7 Tangram Pieces with Neon Yellow Dividing Lines -->
+              <!-- 7 Canonical Tangram Polygons with Interactive Illumination -->
               <!-- Piece 1: Large Triangle 1 (Top) -->
-              <polygon id="tangram-piece-1" data-label="01 · STRATEJİ & VİZYON" points="0,0 200,0 100,100" fill="#0E0E0E" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <polygon id="tangram-piece-1" data-label="01 · STRATEJİ & VİZYON" points="0,0 200,0 100,100" fill="#0E0E0E" class="tangram-piece transition-colors duration-300 cursor-pointer" />
               <!-- Piece 2: Small Triangle 1 (Top Right) -->
-              <polygon id="tangram-piece-2" data-label="02 · DEĞER ODAKLI HEDEFLEME" points="150,50 200,0 200,100" fill="#0E0E0E" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <polygon id="tangram-piece-2" data-label="02 · DEĞER ODAKLI HEDEFLEME" points="150,50 200,0 200,100" fill="#0E0E0E" class="tangram-piece transition-colors duration-300 cursor-pointer" />
               <!-- Piece 3: Large Triangle 2 (Left) -->
-              <polygon id="tangram-piece-3" data-label="03 · TÜKETİCİ İÇGÖRÜSÜ" points="0,0 0,200 100,100" fill="#0E0E0E" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
-              <!-- Piece 4: Square 45° (Mid Right) -->
-              <polygon id="tangram-piece-4" data-label="04 · PAZAR KONUMLANDIRMA" points="100,100 150,50 200,100 150,150" fill="#0E0E0E" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
-              <!-- Piece 5: Small Triangle 2 (Center) -->
-              <polygon id="tangram-piece-5" data-label="05 · YARATICI REKLAM" points="50,150 100,100 150,150" fill="#0E0E0E" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <polygon id="tangram-piece-3" data-label="03 · TÜKETİCİ İÇGÖRÜSÜ" points="0,0 0,200 100,100" fill="#0E0E0E" class="tangram-piece transition-colors duration-300 cursor-pointer" />
+              <!-- Piece 4: Square 45° (Center Right) -->
+              <polygon id="tangram-piece-4" data-label="04 · PAZAR KONUMLANDIRMA" points="100,100 150,50 200,100 150,150" fill="#0E0E0E" class="tangram-piece transition-colors duration-300 cursor-pointer" />
+              <!-- Piece 5: Small Triangle 2 (Center Lower) -->
+              <polygon id="tangram-piece-5" data-label="05 · YARATICI REKLAM" points="50,150 100,100 150,150" fill="#0E0E0E" class="tangram-piece transition-colors duration-300 cursor-pointer" />
               <!-- Piece 6: Medium Triangle (Bottom Right) -->
-              <polygon id="tangram-piece-6" data-label="06 · KÜRESEL MEDYA GÜCÜ" points="100,200 200,200 200,100" fill="#0E0E0E" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <polygon id="tangram-piece-6" data-label="06 · KÜRESEL MEDYA GÜCÜ" points="100,200 200,200 200,100" fill="#0E0E0E" class="tangram-piece transition-colors duration-300 cursor-pointer" />
               <!-- Piece 7: Parallelogram (Bottom Left) -->
-              <polygon id="tangram-piece-7" data-label="07 · DÖNÜŞÜM & BÜYÜME" points="0,200 50,150 150,150 100,200" fill="#0E0E0E" stroke="#D4FF3F" stroke-width="2.5" stroke-linejoin="round" class="tangram-piece transition-all duration-300" />
+              <polygon id="tangram-piece-7" data-label="07 · DÖNÜŞÜM & BÜYÜME" points="0,200 50,150 150,150 100,200" fill="#0E0E0E" class="tangram-piece transition-colors duration-300 cursor-pointer" />
 
-              <!-- Outer Crisp Brilliant White Square Frame (Drawn ON TOP of all pieces for razor-sharp pure white perimeter) -->
-              <rect x="0" y="0" width="200" height="200" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="miter" class="pointer-events-none drop-shadow-[0_0_12px_rgba(255,255,255,0.5)]" />
+              <!-- Dedicated Internal Neon Yellow Dividing Lines (Uniform 2.5px width) -->
+              <g stroke="#D4FF3F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="pointer-events-none">
+                <line x1="0" y1="200" x2="200" y2="0" />
+                <line x1="0" y1="0" x2="100" y2="100" />
+                <line x1="150" y1="50" x2="200" y2="100" />
+                <line x1="100" y1="100" x2="150" y2="150" />
+                <line x1="50" y1="150" x2="150" y2="150" />
+                <line x1="100" y1="200" x2="200" y2="100" />
+              </g>
+
+              <!-- Outer Crisp Brilliant White Square Frame (Flawless perimeter with zero neon leakage) -->
+              <rect x="0" y="0" width="200" height="200" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="miter" class="pointer-events-none drop-shadow-[0_0_12px_rgba(255,255,255,0.6)]" />
             </svg>
 
             <!-- Dynamic Interactive Caption Label -->
@@ -309,7 +319,7 @@
         </div>
 
         <!-- Official Vector Logos Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-5">
           
           <!-- 1. Koç Holding (Official SVG) -->
           <div class="official-logo-card group" title="Koç Topluluğu">
@@ -349,6 +359,81 @@
           <!-- 8. Sabancı Holding (Official SVG) -->
           <div class="official-logo-card group" title="Sabancı Topluluğu">
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjguNzIgNTAuNjgiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTIsLmNscy0ze2ZpbGw6I0ZGRkZGRjt9LmNscy0yLC5jbHMtNXtmaWxsLXJ1bGU6ZXZlbm9kZDt9LmNscy00e2ZpbGw6IzAwNGI5Mzt9LmNscy01e2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPlNhYmFuY8SxPC90aXRsZT48ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIj48ZyBpZD0iTGF5ZXJfMS0yIiBkYXRhLW5hbWU9IkxheWVyIDEiPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTAsMjUuMzRBMjUuMzQsMjUuMzQsMCwwLDEsNDkuNDEsMTcuNGEyNS4zNSwyNS4zNSwwLDEsMSwwLDE1Ljg3QTI1LjM0LDI1LjM0LDAsMCwxLDAsMjUuMzRaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTM2LjY3LDMxLjA2cTAsNC42Ny0zLjA3LDYuMTVhNy44LDcuOCwwLDAsMS0yLjIxLjYxQTI0LjM3LDI0LjM3LDAsMCwxLDEyOCwzOEgxMDRWMTIuNjdoMjIuODhhMjEuODksMjEuODksMCwwLDEsMy42NS4yMyw3LjM4LDcuMzgsMCwwLDEsMi4zNS43NkE0Ljc0LDQuNzQsMCwwLDEsMTM1LDE1LjgyYTguMDcsOC4wNywwLDAsMSwuNjUsMy41cTAsMy4zOC0xLjY0LDQuNjdhNC43Nyw0Ljc3LDAsMCwxLTEuMjkuNzIsMTQuMjUsMTQuMjUsMCwwLDEtMi4wNS40NiwxNC40OCwxNC40OCwwLDAsMSwyLjcuNDIsNC41OSw0LjU5LDAsMCwxLDEuNjMuNzlDMTM2LjEyLDI3LjI3LDEzNi42NywyOC44MywxMzYuNjcsMzEuMDZaTTEyOCwyMC41N2EyLDIsMCwwLDAtMS40MS0yLjEzLDYuMjcsNi4yNywwLDAsMC0uNzktLjExYy0uMjYsMC0uNzUsMC0xLjQ5LDBIMTExLjU2djQuNDhoMTNhMTMsMTMsMCwwLDAsMS42Ny0uMDcsMi40OCwyLjQ4LDAsMCwwLC44Ny0uMjdBMiwyLDAsMCwwLDEyOCwyMC41N1ptLjkxLDkuNTRhMiwyLDAsMCwwLTEuMzYtMi4yMSwyLjI5LDIuMjksMCwwLDAtLjczLS4xMWMtLjI4LDAtLjgzLDAtMS42NywwaC0xMy42djQuNjRoMTQuNzhhNC43OCw0Ljc4LDAsMCwwLC42NCwwLDQsNCwwLDAsMCwuNDItLjA4LDEuNjYsMS42NiwwLDAsMCwuMzgtLjExQTIsMiwwLDAsMCwxMjguOTIsMzAuMTFaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTY5Ljg5LDM4bC0yLjUxLTQuNTJIMTUxTDE0OC42MSwzOGgtOC43NGwxNC4yNC0yNS4zNGgxMC4zNEwxNzguMzIsMzhaTTE1OS4yMSwxOC4xbC01LjQsMTAuMTFoMTAuODdaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjIwNC4yIDM4LjAxIDE4OS4wNyAxOC45NCAxODkuMjYgMzguMDEgMTgxLjg1IDM4LjAxIDE4MS44NSAxMi42NyAxOTQuMTMgMTIuNjcgMjA5LjQ4IDMxLjkzIDIwOS4yOSAxMi42NyAyMTYuNTggMTIuNjcgMjE2LjU4IDM4LjAxIDIwNC4yIDM4LjAxIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMjU0LjkyLDI5LjYxYzAsMSwwLDEuODEtLjExLDIuNTVhOSw5LDAsMCwxLS4zOCwxLjg2LDYuMTUsNi4xNSwwLDAsMS0uNjgsMS40MSw1LDUsMCwwLDEtMSwxLDksOSwwLDAsMS0xLjY3Ljk1LDEwLjE5LDEwLjE5LDAsMCwxLTIuNDcuNTNjLTEuMDcuMS0yLjQ3LjE3LTQuMjIuMTlzLTQsLjA4LTYuODQuMDhjLTEuOCwwLTMuMzIsMC00LjU2LS4wOHMtMi4zLS4xNC0zLjE5LS4yNmExMi44LDEyLjgsMCwwLDEtMi4yMS0uNSw4LjM5LDguMzksMCwwLDEtMS42Ny0uODMsNS44Nyw1Ljg3LDAsMCwxLTEuNTYtMS40NSw3LjM2LDcuMzYsMCwwLDEtMS0yLjIsMTcuOTIsMTcuOTIsMCwwLDEtLjU0LTMuMzRjLS4xLTEuMzItLjE1LTIuOTItLjE1LTQuNzlxMC0yLjUxLjE1LTQuMjZhMTQuMjksMTQuMjksMCwwLDEsLjU0LTMsNiw2LDAsMCwxLDEuMDYtMiw2LjQ1LDYuNDUsMCwwLDEsMS42Ny0xLjM3LDkuNTgsOS41OCwwLDAsMSwxLjgzLS44LDExLjY1LDExLjY1LDAsMCwxLDIuMjgtLjUzLDMwLjg1LDMwLjg1LDAsMCwxLDMuMTktLjI3YzEuMjYtLjA1LDIuNzgtLjA3LDQuNTYtLjA3LDIsMCwzLjY4LDAsNS4wNSwwczIuNTYuMDYsMy41LjExYTIyLjA3LDIyLjA3LDAsMCwxLDIuMzIuMjMsOS41LDkuNSwwLDAsMSwxLjU1LjM4LDUuNDMsNS40MywwLDAsMSwzLjIzLDIuNDcsOS44OSw5Ljg5LDAsMCwxLDEsNC45di45NWgtNy4zN2E0LjgzLDQuODMsMCwwLDAtLjI3LTEuNiwxLjYyLDEuNjIsMCwwLDAtMS0uOTEsNS44OSw1Ljg5LDAsMCwwLTIuMTMtLjQyYy0uOTQtLjA1LTIuMjEtLjA3LTMuOC0uMDctLjgxLDAtMS41OSwwLTIuMzIsMHMtMS40MSwwLTIsMC0xLjA4LDAtMS40OSwwYTQuNzksNC43OSwwLDAsMC0uNzksMCwzLjc4LDMuNzgsMCwwLDAtMi4xNywxLDQuMjgsNC4yOCwwLDAsMC0uODQsMi4zMmMwLC4yOCwwLC43OS0uMDcsMS41MnMwLDEuNDEsMCwyLjA5YTI0Ljc2LDI0Ljc2LDAsMCwwLC4xOSwzLjUsMywzLDAsMCwwLDEsMS45LDQuNTEsNC41MSwwLDAsMCwyLjM1LjgzYzEsLjEsMi40NS4xNSw0LjIyLjE1aDMuNjlMMjQ0LDMyYTcuMjUsNy4yNSwwLDAsMCwxLjI1LS4xOSw0LjE3LDQuMTcsMCwwLDAsLjg0LS4zMSwyLDIsMCwwLDAsMS0xLDQuNzQsNC43NCwwLDAsMCwuMzEtMmg3LjQ4WiIvPjxyZWN0IGNsYXNzPSJjbHMtMyIgeD0iMjYxIiB5PSIxMi42NyIgd2lkdGg9IjcuNzEiIGhlaWdodD0iMjUuMzQiLz48cGF0aCBjbGFzcz0iY2xzLTQiIGQ9Ik0wLDI1LjM0QTI1LjM0LDI1LjM0LDAsMCwxLDQ5LjQxLDE3LjRhMjUuMzUsMjUuMzUsMCwxLDEsMCwxNS44N0EyNS4zNCwyNS4zNCwwLDAsMSwwLDI1LjM0WiIvPjxwYXRoIGNsYXNzPSJjbHMtNSIgZD0iTTQxLjE2LDMwLjE1YzAtMi42My0uNTMtNC41My0xLjU1LTUuNjctMS4xOC0xLjM2LTIuNzQtMS44Mi02LjU0LTItMi4wNS0uMDgtMy41Ny0uMTItNC0uMTJIMjEuODZhMTMuMSwxMy4xLDAsMCwxLTMtLjE1LDEuOTQsMS45NCwwLDAsMS0xLjctMmMwLTEuNC42OC0xLjk0LDIuNTgtMi4wOSwxLjE4LS4wNyw0LjYtLjE5LDctLjE5LDUuMjEsMCw1LjkzLjMxLDUuOTMsMi41MUg0MC4xYzAtNC4zNy0uODQtNi4xMi0zLjM4LTcuMDctMS45NC0uNzItMy45NS0uODctMTEuMzYtLjg3YTY1LjA4LDY1LjA4LDAsMCwwLTkuNS40MmMtNC43MS42LTYuMzQsMi42Ni02LjM0LDcuNzEsMCw0LDEuMDYsNS45MywzLjcyLDYuODQsMS4yOS40NSwzLjUuNjQsNy4xOC42NGg3YTM1Ljg1LDM1Ljg1LDAsMCwxLDMuOC4wOGMxLjU2LjE1LDIuMzIuODcsMi4zMiwyLjE2LDAsMi4yNS0xLDIuNDctMTAsMi40N2EzNSwzNSwwLDAsMS00LjgzLS4yNmMtMS4xNC0uMjctMS40LS43Mi0xLjQ4LTIuNjJIOS42M2MwLC41NywwLDEuMjEsMCwxLjQ4LDAsMy42MSwxLjIyLDUuNDMsNC4wNyw2LjE1LDEuODYuNSw0LjQ0LjY1LDEwLjE4LjY1YTk1LjQ0LDk1LjQ0LDAsMCwwLDEwLjY0LS4zOEMzOS4zNCwzNy4zMiw0MS4xNiwzNS4yNCw0MS4xNiwzMC4xNVoiLz48cGF0aCBjbGFzcz0iY2xzLTUiIGQ9Ik03OSwyOC4yMSw3My40OSwxOC4xbC01LjQsMTAuMTFaTTkyLjYsMzhIODQuMTZsLTIuNS00LjUySDY1LjMyTDYyLjg5LDM4SDU0LjE1TDY4LjQsMTIuNjdINzguNzNaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTI4LDIwLjU3YTIsMiwwLDAsMC0xLjQxLTIuMTMsNi4yNyw2LjI3LDAsMCwwLS43OS0uMTFjLS4yNiwwLS43NSwwLTEuNDksMEgxMTEuNTZ2NC40OGgxM2ExMywxMywwLDAsMCwxLjY3LS4wNywyLjQ4LDIuNDgsMCwwLDAsLjg3LS4yN0EyLDIsMCwwLDAsMTI4LDIwLjU3Wm0uOTEsOS41NGEyLDIsMCwwLDAtMS4zNi0yLjIxLDIuMjksMi4yOSwwLDAsMC0uNzMtLjExYy0uMjgsMC0uODMsMC0xLjY3LDBoLTEzLjZ2NC42NGgxNC43OGE0Ljc4LDQuNzgsMCwwLDAsLjY0LDBsLjQyLS4wOGExLjY2LDEuNjYsMCwwLDAsLjM4LS4xMUEyLDIsMCwwLDAsMTI4LjkyLDMwLjExWm03Ljc1Ljk1cTAsNC42Ny0zLjA3LDYuMTVhNy44LDcuOCwwLDAsMS0yLjIxLjYxQTI0LjM3LDI0LjM3LDAsMCwxLDEyOCwzOEgxMDRWMTIuNjdoMjIuODhhMjEuODksMjEuODksMCwwLDEsMy42NS4yMyw3LjM4LDcuMzgsMCwwLDEsMi4zNS43NkE0Ljc0LDQuNzQsMCwwLDEsMTM1LDE1LjgyYTguMDcsOC4wNywwLDAsMSwuNjUsMy41cTAsMy4zOC0xLjY0LDQuNjdhNC43Nyw0Ljc3LDAsMCwxLTEuMjkuNzIsMTQuMjUsMTQuMjUsMCwwLDEtMi4wNS40NiwxNC40OCwxNC40OCwwLDAsMSwyLjcuNDIsNC41OSw0LjU5LDAsMCwxLDEuNjMuNzlDMTM2LjEyLDI3LjI3LDEzNi42NywyOC44MywxMzYuNjcsMzEuMDZaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMTU5LjIxLDE4LjFsLTUuNCwxMC4xMWgxMC44N1pNMTY5Ljg5LDM4bC0yLjUxLTQuNTJIMTUxTDE0OC42MSwzOGgtOC43NGwxNC4yNC0yNS4zNGgxMC4zNEwxNzguMzIsMzhaIi8+PC9nPjwvZz48L3N2Zz4=" alt="Sabancı Topluluğu Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+          </div>
+
+          <!-- 9. Coca-Cola -->
+          <div class="official-logo-card group" title="Coca-Cola">
+            <img src="assets/logos/coca_cola.svg" alt="Coca-Cola Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 10. LEGO -->
+          <div class="official-logo-card group" title="LEGO">
+            <img src="assets/logos/lego.svg" alt="LEGO Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 11. Cornetto -->
+          <div class="official-logo-card group" title="Cornetto">
+            <img src="assets/logos/cornetto.png" alt="Cornetto Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 12. Škoda -->
+          <div class="official-logo-card group" title="Škoda">
+            <img src="assets/logos/skoda.svg" alt="Škoda Resmi Logo" class="h-7 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 13. Paşabahçe -->
+          <div class="official-logo-card group" title="Paşabahçe">
+            <img src="assets/logos/pasabahce.png" alt="Paşabahçe Resmi Logo" class="h-7 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 14. Yeşilay -->
+          <div class="official-logo-card group" title="Yeşilay">
+            <img src="assets/logos/yesilay.svg" alt="Yeşilay Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 15. Karaca -->
+          <div class="official-logo-card group" title="Karaca">
+            <img src="assets/logos/karaca.svg" alt="Karaca Resmi Logo" class="h-7 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 16. Yumoş -->
+          <div class="official-logo-card group" title="Yumoş">
+            <img src="assets/logos/yumos.png" alt="Yumoş Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 17. Heinz -->
+          <div class="official-logo-card group" title="Heinz">
+            <img src="assets/logos/heinz.svg" alt="Heinz Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 18. Pastavilla -->
+          <div class="official-logo-card group" title="Pastavilla">
+            <img src="assets/logos/pastavilla.png" alt="Pastavilla Resmi Logo" class="h-7 max-w-[130px] w-auto object-contain rounded-md transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 19. UNICEF -->
+          <div class="official-logo-card group" title="UNICEF">
+            <img src="assets/logos/unicef.svg" alt="UNICEF Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 20. Aposto -->
+          <div class="official-logo-card group" title="Aposto">
+            <img src="assets/logos/aposto.svg" alt="Aposto Resmi Logo" class="h-6 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 21. Paloma Hotels -->
+          <div class="official-logo-card group" title="Paloma Hotels">
+            <img src="assets/logos/paloma.png" alt="Paloma Hotels Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 22. Sinnada -->
+          <div class="official-logo-card group" title="Sinnada">
+            <img src="assets/logos/sinnada.svg" alt="Sinnada Resmi Logo" class="h-7 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
+          </div>
+
+          <!-- 23. Giliğ Dondurma -->
+          <div class="official-logo-card group" title="Giliğ Dondurma">
+            <img src="assets/logos/gilig.png" alt="Giliğ Dondurma Resmi Logo" class="h-8 max-w-[130px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" loading="lazy">
           </div>
 
         </div>
@@ -1307,8 +1392,7 @@
         pieces.forEach((piece, i) => {
           if (i === index) {
             piece.setAttribute('fill', '#D4FF3F');
-            piece.setAttribute('fill-opacity', '0.95');
-            piece.style.filter = 'drop-shadow(0 0 18px rgba(212,255,63,0.95))';
+            piece.setAttribute('fill-opacity', '0.92');
             if (labelEl) {
               const label = piece.getAttribute('data-label') || 'TANGRAM 360° MİMARİSİ';
               labelEl.textContent = label;
@@ -1317,7 +1401,6 @@
           } else {
             piece.setAttribute('fill', '#0E0E0E');
             piece.setAttribute('fill-opacity', '1');
-            piece.style.filter = 'none';
           }
         });
 
@@ -1326,7 +1409,6 @@
           pieces.forEach(piece => {
             piece.setAttribute('fill', '#0E0E0E');
             piece.setAttribute('fill-opacity', '1');
-            piece.style.filter = 'none';
           });
           if (labelEl) {
             labelEl.textContent = 'TANGRAM 360° MİMARİSİ';
